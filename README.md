@@ -1,4 +1,4 @@
 # Holywowmmo-WoW-CMS
-Welcome to Holywowmmo-WoW-CMS, this is a CMS for World of Warcraft Legion, please report any bugs, or issues in the issues tab.
+This CMS is currently in heavy development, it is not functional, I push every update, for educational purposes.
 
-Soon to be fully functional.
+note: this will eventually be a full working CMS, for World of Warcraft Legion.
