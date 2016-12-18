@@ -17,12 +17,15 @@
   	   <td id="nav">
   	   <ul class="info">
 <?php 
-$info_set = mysqli_query($connection, "SELECT * FROM information ORDER BY position ASC");
+$query_info = "SELECT * FROM information ORDER BY position ASC";
+$info_set = mysqli_query($connection,$query_info);
+confirm_query($info_set);
 while ($info = mysqli_fetch_array($info_set)){
 	echo "<li>{$info["menu"]}</li>";
 
-
-$page_set = mysqli_query($connection, "SELECT * FROM pages WHERE information_id ={$info["id"]} ORDER BY position ASC");
+$query_pages = "SELECT * FROM pages WHERE information_id ={$info["id"]} ORDER BY position ASC";
+$page_set = mysqli_query($connection,$query_pages);
+confirm_query($query_pages);
 echo "<ul class=\"pages\">";
 while ($info = mysqli_fetch_array($page_set)){
 	echo "<li>{$info["menu"]}</li>";
